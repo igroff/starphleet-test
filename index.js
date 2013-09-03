@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 
-var VERSION=9;
+var VERSION=10;
 
 app.get('/diagnostic', function(request, response) { response.send(500); });
 app.get('*', function(request, response) { response.end( VERSION + "" + request.path.slice(1)); });
