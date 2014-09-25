@@ -4,7 +4,7 @@
   "description": "If you GET it, I'll send it",
   "main": "index.js",
   "scripts": {
-    "start": "echo Startup Wait ${STARTUP_WAIT} seconds;sleep ${STARTUP_WAIT:-0} ;node index.js"
+    "start": "echo Startup Wait ${STARTUP_WAIT} seconds;sleep ${STARTUP_WAIT:0} ;node index.js"
   },
   "author": "Will Ballard",
   "license": "BSD-2-Clause",
