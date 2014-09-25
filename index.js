@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 
-var VERSION=25
+var VERSION="26-Fast"
   
 app.get('/diagnostic', function(request, response) { response.send(500); });
 app.get('*', function(request, response) { response.end( VERSION + " " + request.path.slice(1)); });
